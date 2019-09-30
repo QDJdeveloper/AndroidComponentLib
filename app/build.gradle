@@ -33,7 +33,8 @@ dependencies {
 
 
     //Module 依赖
-    api project(':lib_utils')
+    api project(':lib_base')
+
     //在这里使用库的依赖
     implementation librarys.supportAppcompat
     implementation librarys.supportV4
