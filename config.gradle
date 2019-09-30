@@ -1,0 +1,30 @@
+/**
+ * 在主项目的根目录下创建config.gradle文件
+ * 在这里单独处理统一依赖问题
+ * 注意需要在根目录的build.gradle中进行引入
+ */
+ext {
+  android = [
+      compileSdkVersion: 28,
+      buildToolsVersion: "28.0.3",
+      minSdkVersion: 19,
+      targetSdkVersion: 28
+  ]
+
+  //Version
+  depsVersion = [
+      supportLibrary: '28.0.0',
+      gson: '2.8.0'
+
+  ]
+
+  //Libraries dependencies
+  depsLibs = [
+      suppoutDesign: "com.android.support:design:${depsVersion.supportLibrary}",
+      supportAppcompat: "com.android.support:appcompat-v7:${depsVersion.supportLibrary}",
+      supportV4: "com.android.support:support-v4:${depsVersion.supportLibrary}",
+      gson: "com.google.code.gson:gson:${depsVersion.gson}",
+  ]
+
+
+}
