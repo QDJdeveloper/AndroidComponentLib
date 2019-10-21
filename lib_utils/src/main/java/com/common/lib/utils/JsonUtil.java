@@ -6,5 +6,5 @@ package com.common.lib.utils;
  * 描述: JsonUtil
  */
 public class JsonUtil {
-
+// Json 转换类
 }
