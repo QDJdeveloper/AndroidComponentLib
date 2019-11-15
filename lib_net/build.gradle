@@ -29,10 +29,6 @@ android {
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-  api project(':lib_utils')
-  api project(':lib_ui')
-  api project(':lib_net')
-
   //在这里使用库的依赖
   implementation librarys.supportAppcompat
   implementation librarys.supportV4
