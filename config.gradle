@@ -14,7 +14,15 @@ ext {
   //Version
   depsVersion = [
       supportLibrary: '28.0.0',
-      gson: '2.8.0'
+      gson: '2.8.0',
+      adapterRxjava:'2.1.0',
+      rxlifecycle: '1.0',
+      rxlifecycleComponents: '1.0',
+      retrofit: '2.1.0',
+      converterGson: '2.0.0',
+      fastjson: '1.2.61',
+      rxjava: '2.2.6',
+      rxandroid: '2.1.0',
 
   ]
 
@@ -24,6 +32,14 @@ ext {
       supportAppcompat: "com.android.support:appcompat-v7:${depsVersion.supportLibrary}",
       supportV4: "com.android.support:support-v4:${depsVersion.supportLibrary}",
       gson: "com.google.code.gson:gson:${depsVersion.gson}",
+      adapterRxjava: "com.squareup.retrofit2:adapter-rxjava:${depsVersion.adapterRxjava}",
+      rxlifecycle: "com.trello:rxlifecycle:${depsVersion.rxlifecycle}",
+      rxlifecycleComponents: "com.trello:rxlifecycle-components:${depsVersion.rxlifecycleComponents}",
+      retrofit: "com.squareup.retrofit2:retrofit:${depsVersion.retrofit}",
+      converterGson: "com.squareup.retrofit2:converter-gson:${depsVersion.converterGson}",
+      fastjson: "com.alibaba:fastjson:${depsVersion.fastjson}",
+      rxjava: "io.reactivex.rxjava2:rxjava:${depsVersion.rxjava}",
+      rxandroid: "io.reactivex.rxjava2:rxandroid:${depsVersion.rxandroid}",
   ]
 
 

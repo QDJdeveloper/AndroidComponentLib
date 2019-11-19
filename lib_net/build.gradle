@@ -33,8 +33,21 @@ dependencies {
   implementation librarys.supportAppcompat
   implementation librarys.supportV4
   implementation librarys.suppoutDesign
+
+  /*rx-android-java*/
+  implementation librarys.adapterRxjava
+  implementation librarys.rxlifecycle
+  implementation librarys.rxlifecycleComponents
+  implementation librarys.rxjava
+  implementation librarys.rxandroid
+
+  /*rotrofit*/
+  implementation librarys.retrofit
+  implementation librarys.converterGson
   implementation librarys.gson
 
+  //fastjson
+  implementation librarys.fastjson
 
   testImplementation 'junit:junit:4.12'
   androidTestImplementation 'com.android.support.test:runner:1.0.2'
