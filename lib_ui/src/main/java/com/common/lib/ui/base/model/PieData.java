@@ -5,7 +5,7 @@ import android.support.annotation.NonNull;
 /**
  * 创建时间: 2019/12/26 18:30 <br>
  * 作者: qiudengjiao <br>
- * 描述:
+ * 描述: 自定义饼状图数据 Model
  */
 public class PieData {
 

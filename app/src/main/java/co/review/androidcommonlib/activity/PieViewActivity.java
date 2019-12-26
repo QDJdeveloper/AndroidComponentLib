@@ -36,11 +36,15 @@ public class PieViewActivity extends BaseActivity {
     PieData pieData3 = new PieData("sloop", 40);
     PieData pieData4 = new PieData("sloop", 20);
     PieData pieData5 = new PieData("sloop", 20);
+    PieData pieData6 = new PieData("sloop", 20);
+    PieData pieData7 = new PieData("sloop", 10);
     datas.add(pieData);
     datas.add(pieData2);
     datas.add(pieData3);
     datas.add(pieData4);
     datas.add(pieData5);
+    datas.add(pieData6);
+    datas.add(pieData7);
     return datas;
   }
 }
