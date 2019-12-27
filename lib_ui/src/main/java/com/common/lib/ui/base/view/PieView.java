@@ -125,7 +125,7 @@ public class PieView extends View {
 
       pie.setPercentage(percentage);                  // 记录百分比
       pie.setAngle(angle);                            // 记录角度大小
-      sumAngle += angle;
+      //sumAngle += angle;
 
       Log.i("angle", "" + pie.getAngle());
     }

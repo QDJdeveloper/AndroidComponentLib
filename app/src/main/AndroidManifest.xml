@@ -20,9 +20,9 @@
       </intent-filter>
     </activity>
 
-    <activity android:name="com.common.lib.ui.base.BaseActivity"/>
     <activity android:name=".activity.CustomViewActivity"/>
     <activity android:name=".activity.PieViewActivity"/>
+    <activity android:name=".activity.RadarViewActivity"/>
   </application>
 
 </manifest>

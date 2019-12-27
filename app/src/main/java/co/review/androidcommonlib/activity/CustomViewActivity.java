@@ -28,6 +28,7 @@ public class CustomViewActivity extends BaseActivity {
 
   private void initClickListener() {
     pieViewClick();
+    radarViewClick();
   }
 
   private void pieViewClick() {
@@ -39,8 +40,22 @@ public class CustomViewActivity extends BaseActivity {
     });
   }
 
+  private void radarViewClick() {
+    findViewById(R.id.btn_radar_view).setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        startRadarActivity();
+      }
+    });
+  }
+
   private void startPieViewActivity() {
     Intent intent = new Intent(this, PieViewActivity.class);
+    startActivity(intent);
+  }
+
+  private void startRadarActivity() {
+    Intent intent = new Intent(this,RadarViewActivity.class);
     startActivity(intent);
   }
 }
