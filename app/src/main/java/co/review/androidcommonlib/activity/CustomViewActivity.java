@@ -49,11 +49,17 @@ public class CustomViewActivity extends BaseActivity {
     });
   }
 
+  /**
+   * 跳转到自定义饼状图
+   */
   private void startPieViewActivity() {
     Intent intent = new Intent(this, PieViewActivity.class);
     startActivity(intent);
   }
 
+  /**
+   * 跳转到自定义雷达图
+   */
   private void startRadarActivity() {
     Intent intent = new Intent(this,RadarViewActivity.class);
     startActivity(intent);
