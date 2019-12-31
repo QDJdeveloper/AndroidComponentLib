@@ -1,4 +1,4 @@
-package com.sunfusheng.util;
+package com.common.lib.ui.base.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,9 +9,6 @@ import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
 import android.support.annotation.RequiresApi;
 
-/**
- * @author sunfusheng on 2018/6/25.
- */
 public class BlurUtils {
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)

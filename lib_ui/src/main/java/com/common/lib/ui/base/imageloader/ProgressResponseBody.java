@@ -1,11 +1,9 @@
-package com.sunfusheng.progress;
+package com.common.lib.ui.base.imageloader;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
-
 import java.io.IOException;
-
 import okhttp3.MediaType;
 import okhttp3.ResponseBody;
 import okio.Buffer;
@@ -14,9 +12,7 @@ import okio.ForwardingSource;
 import okio.Okio;
 import okio.Source;
 
-/**
- * @author by sunfusheng on 2017/6/14.
- */
+
 public class ProgressResponseBody extends ResponseBody {
 
     private static final Handler mainThreadHandler = new Handler(Looper.getMainLooper());
@@ -63,7 +59,13 @@ public class ProgressResponseBody extends ResponseBody {
 
                 if (internalProgressListener != null && lastTotalBytesRead != totalBytesRead) {
                     lastTotalBytesRead = totalBytesRead;
-                    mainThreadHandler.post(() -> internalProgressListener.onProgress(url, totalBytesRead, contentLength()));
+                    mainThreadHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            internalProgressListener.onProgress(url, totalBytesRead,
+                                contentLength());
+                        }
+                    });
                 }
                 return bytesRead;
             }

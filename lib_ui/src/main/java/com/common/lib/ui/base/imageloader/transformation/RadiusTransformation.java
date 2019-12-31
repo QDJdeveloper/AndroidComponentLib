@@ -1,4 +1,4 @@
-package com.common.lib.ui.base.imageloader;
+package com.common.lib.ui.base.imageloader.transformation;
 
 import android.content.Context;
 import android.graphics.Bitmap;

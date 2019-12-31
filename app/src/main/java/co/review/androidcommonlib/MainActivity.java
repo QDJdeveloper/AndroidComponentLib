@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import co.review.androidcommonlib.activity.CustomViewActivity;
+import co.review.androidcommonlib.activity.ImageLoaderActivity;
 import com.common.lib.ui.base.BaseActivity;
 import com.common.lib.utils.LogUtil;
 
@@ -25,6 +26,7 @@ public class MainActivity extends BaseActivity {
   private void initClickListener() {
     logClick();
     customViewClick();
+    imageLoaderClick();
   }
 
   private void logClick() {
@@ -46,8 +48,22 @@ public class MainActivity extends BaseActivity {
     });
   }
 
+  private void imageLoaderClick() {
+    findViewById(R.id.btn_image_loader_view).setOnClickListener(new View.OnClickListener(){
+      @Override
+      public void onClick(View v) {
+        startImageLoaderActicity();
+      }
+    });
+  }
+
   private void startCustomViewActivity() {
     Intent intent = new Intent(this, CustomViewActivity.class);
+    startActivity(intent);
+  }
+
+  private void startImageLoaderActicity() {
+    Intent intent = new Intent(this, ImageLoaderActivity.class);
     startActivity(intent);
   }
 }

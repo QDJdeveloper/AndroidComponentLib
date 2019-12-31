@@ -1,30 +1,25 @@
-package com.sunfusheng;
+package com.common.lib.ui.base.imageloader;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import android.widget.ImageView;
-
 import com.bumptech.glide.load.Transformation;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.sunfusheng.progress.OnProgressListener;
-import com.sunfusheng.transformation.CircleTransformation;
-import com.sunfusheng.transformation.RadiusTransformation;
+import com.common.lib.ui.base.imageloader.transformation.CircleTransformation;
+import com.common.lib.ui.base.imageloader.transformation.RadiusTransformation;
 
-/**
- * @author sunfusheng on 2017/11/10.
- */
 @SuppressLint("CheckResult")
-public class GlideImageView extends ImageView {
+public class GlideImageView extends AppCompatImageView {
 
     private boolean enableState = false;
     private float pressedAlpha = 0.4f;
     private float unableAlpha = 0.3f;
-    private GlideImageLoader imageLoader;
+    private ImageLoader imageLoader;
 
     public GlideImageView(Context context) {
         this(context, null);
@@ -40,12 +35,12 @@ public class GlideImageView extends ImageView {
     }
 
     private void init() {
-        imageLoader = GlideImageLoader.create(this);
+        imageLoader = ImageLoader.create(this);
     }
 
-    public GlideImageLoader getImageLoader() {
+    public ImageLoader getImageLoader() {
         if (imageLoader == null) {
-            imageLoader = GlideImageLoader.create(this);
+            imageLoader = ImageLoader.create(this);
         }
         return imageLoader;
     }
@@ -143,7 +138,8 @@ public class GlideImageView extends ImageView {
         loadDrawable(resId, placeholder, null);
     }
 
-    public void loadDrawable(@DrawableRes int resId, @DrawableRes int placeholder, @NonNull Transformation<Bitmap> transformation) {
+    public void loadDrawable(@DrawableRes int resId, @DrawableRes int placeholder, @NonNull
+        Transformation<Bitmap> transformation) {
         getImageLoader().load(resId, placeholder, transformation);
     }
 

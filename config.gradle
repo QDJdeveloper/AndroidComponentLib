@@ -15,7 +15,7 @@ ext {
   depsVersion = [
       supportLibrary: '28.0.0',
       gson: '2.8.0',
-      adapterRxjava:'2.1.0',
+      adapterRxjava: '2.1.0',
       rxlifecycle: '1.0',
       rxlifecycleComponents: '1.0',
       retrofit: '2.1.0',
@@ -23,7 +23,7 @@ ext {
       fastjson: '1.2.61',
       rxjava: '2.2.6',
       rxandroid: '2.1.0',
-
+      glide_version: '4.9.0',
   ]
 
   //Libraries dependencies
@@ -40,7 +40,9 @@ ext {
       fastjson: "com.alibaba:fastjson:${depsVersion.fastjson}",
       rxjava: "io.reactivex.rxjava2:rxjava:${depsVersion.rxjava}",
       rxandroid: "io.reactivex.rxjava2:rxandroid:${depsVersion.rxandroid}",
+      glide: "com.github.bumptech.glide:glide:${depsVersion.glide_version}",
+      annotationProcessor: "com.github.bumptech.glide:compiler:${depsVersion.glide_version}",
+      glide_annotations: "com.github.bumptech.glide:annotations:${depsVersion.glide_version}",
+      glide_integration: "com.github.bumptech.glide:okhttp3-integration:${depsVersion.glide_version}",
   ]
-
-
 }

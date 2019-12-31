@@ -23,6 +23,7 @@
     <activity android:name=".activity.CustomViewActivity"/>
     <activity android:name=".activity.PieViewActivity"/>
     <activity android:name=".activity.RadarViewActivity"/>
+    <activity android:name=".activity.ImageLoaderActivity"/>
   </application>
 
 </manifest>

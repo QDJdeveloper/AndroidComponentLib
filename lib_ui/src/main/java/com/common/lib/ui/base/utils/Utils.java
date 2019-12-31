@@ -1,4 +1,4 @@
-package com.sunfusheng.util;
+package com.common.lib.ui.base.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,7 +12,6 @@ import android.support.annotation.ColorRes;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
-
 import java.util.Collection;
 
 public class Utils {

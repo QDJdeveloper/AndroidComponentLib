@@ -21,4 +21,11 @@
     android:textAllCaps="false"
     android:layout_height="wrap_content" />
 
+  <Button
+    android:id="@+id/btn_image_loader_view"
+    android:layout_width="match_parent"
+    android:text="ImageLoaderView"
+    android:textAllCaps="false"
+    android:layout_height="wrap_content" />
+
 </LinearLayout>

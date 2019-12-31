@@ -1,4 +1,4 @@
-package com.common.lib.ui.base.imageloader;
+package com.common.lib.ui.base.imageloader.transformation;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 import com.bumptech.glide.util.Util;
+import com.common.lib.ui.base.imageloader.transformation.BlurTransformation;
 import java.security.MessageDigest;
 
 public class CircleTransformation extends BitmapTransformation {

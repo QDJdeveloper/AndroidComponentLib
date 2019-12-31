@@ -35,6 +35,12 @@ dependencies {
   implementation librarys.suppoutDesign
   implementation librarys.gson
 
+  //glide 相关
+  api librarys.glide
+  api librarys.glide_annotations
+  api librarys.glide_integration
+  annotationProcessor librarys.annotationProcessor
+
 
   testImplementation 'junit:junit:4.12'
   androidTestImplementation 'com.android.support.test:runner:1.0.2'
