@@ -1,2 +1,2 @@
-# AndroidCommonLib
+# AndroidComponentLib
 Android component library
