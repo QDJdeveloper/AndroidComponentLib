@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <EditText
+      android:id="@+id/et_user_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="username" />
+
+    <EditText
+      android:id="@+id/et_user_password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="userpassword" />
+
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/btn_login"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:text="登录"
+    android:textSize="15dp" />
+
+  <ProgressBar
+    android:id="@+id/progress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="8dp"
+    android:visibility="gone" />
+
+</RelativeLayout>
