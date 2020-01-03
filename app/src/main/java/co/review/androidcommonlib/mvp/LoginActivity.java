@@ -15,7 +15,7 @@ import com.common.lib.ui.base.BaseActivity;
 /**
  * 创建时间: 2020/01/02 16:33 <br>
  * 作者: qiudengjiao <br>
- * 描述: 登录 Activity
+ * 描述: 登录 activity
  */
 public class LoginActivity extends BaseActivity implements ILoginView {
 
@@ -58,8 +58,7 @@ public class LoginActivity extends BaseActivity implements ILoginView {
    * 登录点击
    */
   private void loginClick() {
-    mLonginPresenter.validateCredentials(mUserName.getText().toString(),
-        mUserPassword.getText().toString());
+    mLonginPresenter.login(mUserName.getText().toString(), mUserPassword.getText().toString());
   }
 
   @Override

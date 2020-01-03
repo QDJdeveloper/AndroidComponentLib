@@ -15,11 +15,10 @@ public class LoginPresenter implements LoginInteractor.OnLoginFinishedListener {
     this.loginInteractor = loginInteractor;
   }
 
-  public void validateCredentials(String username, String password) {
+  public void login(String username, String password) {
     if (loginView != null) {
       loginView.showProgress();
     }
-
     loginInteractor.login(username, password, this);
   }
 
